@@ -1,6 +1,15 @@
-**Archived:** I unfortunately no longer make active use of this project
-and haven't properly maintained it since early 2022. I welcome anyone to
-fork and take over this project. 
+### About this fork
+
+This repo adds some small fixes on top of upstream https://github.com/mitchellh/gon/, which was archived and no longer maintained. This fork exists to fix problems that weren't ever fully solved upstream, with a goal of keeping the set of changes as minimal as possible.
+
+To install, run `go install github.com/skeema/gon/cmd/gon@main`.
+
+#### Changelog
+
+* Cherry-picked commit https://github.com/mitchellh/gon/commit/1764e98b3f276fe14648d386b45438b7283ce3ce from fork https://github.com/Bearer/gon to obtain passwords from the `$AC_PASSWORD` environment variable, since `notarytool` does not support the old '@env:AC_PASSWORD' syntax from `altool`
+* Re-build the embedded `create-dmg` bindata, in order to make the change from https://github.com/mitchellh/gon/pull/73 actually take effect
+* Update module name / location
+
 
 -----------------------------------------------------
 
