@@ -1,4 +1,4 @@
-module github.com/mitchellh/gon
+module github.com/skeema/gon
 
 go 1.13
 
